@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messenger App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="nav">
+        <div class="logo" style="cursor: pointer">
+          <img src="./img/icon/facebook-messenger-3.svg" alt="" />
+        </div>
+        <div class="search-bar">
+          <form action="#" class="search-form">
+            <ion-icon name="search-outline" class="search-icon"></ion-icon>
+            <input type="text" class="search-input" placeholder="Search..." />
+          </form>
+        </div>
+        <div class="user">
+          <div class="user-setting">
+            <ion-icon name="settings-outline"></ion-icon>
+          </div>
+          <div class="user-avatar user-sm">
+            <img src="./img/png/a0.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <main class="main">
+        <!-- left-->
+        <div class="contact-bar">
+          <div class="contact">
+            <div class="user-avatar user-sm">
+              <img src="./img/png/a1.png" alt="" />
+            </div>
+            <div class="contact-info">
+              <h5>New Message Request</h5>
+              <h2>From Jane and Jenna</h2>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="user-avatar user-sm">
+              <img src="./img/png/a2.png" alt="" />
+            </div>
+            <div class="user-avatar user-sm">
+              <img src="./img/png/a14.png" alt="" />
+            </div>
+            <div class="contact-info">
+              <h5>IOS Team</h5>
+              <h2>Jordan sent a video <span>20m</span></h2>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="user-avatar user-sm is-online">
+              <img src="./img/png/a3.png" alt="" />
+            </div>
+            <div class="contact-info">
+              <h5>Madison Jones</h5>
+              <h2>What time was out mee... <span>20m</span></h2>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="user-avatar user-sm">
+              <img src="./img/png/a4.png" alt="" />
+            </div>
+            <div class="contact-info">
+              <h5>Miguel Cohen</h5>
+              <h2>Hey rachel! Was great... <span>20m</span></h2>
+            </div>
+          </div>
+          <div class="contact is-active">
+            <div class="user-avatar user-sm">
+              <img src="./img/png/a5.png" alt="" />
+            </div>
+            <div class="user-avatar user-sm">
+              <img src="./img/png/a13.png" alt="" />
+            </div>
+            <div class="contact-info">
+              <h5>Alamos apartment</h5>
+              <h2>Tina: Up for dinner to... <span>20m</span></h2>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="user-avatar user-sm is-online">
+              <img src="./img/png/a6.png" alt="" />
+            </div>
+            <div class="contact-info">
+              <h5>Lea Nor</h5>
+              <h2>Did Sarah ever reach... <span>20m</span></h2>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="user-avatar user-sm">
+              <img src="./img/png/a7.png" alt="" />
+            </div>
+            <div class="contact-info">
+              <h5>Jordan smith</h5>
+              <h2>Jordan sent a video <span>20m</span></h2>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="user-avatar user-sm">
+              <img src="./img/png/a8.png" alt="" />
+            </div>
+            <div class="user-avatar user-sm">
+              <img src="./img/png/a11.png" alt="" />
+            </div>
+            <div class="contact-info">
+              <h5>Sunday brunch group</h5>
+              <h2>Jenna: So excited to... <span>20m</span></h2>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="user-avatar user-sm is-online">
+              <img src="./img/png/a9.png" alt="" />
+            </div>
+            <div class="contact-info">
+              <h5>Jared Ebere</h5>
+              <h2>First to do it <span>20m</span></h2>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="user-avatar user-sm">
+              <img src="./img/png/a10.png" alt="" />
+            </div>
+            <div class="contact-info">
+              <h5>Lina Ashma</h5>
+              <h2>What time does your... <span>20m</span></h2>
+            </div>
+          </div>
+          <button class="button button__add--contact"></button>
+          <div id="toggle">
+            <ion-icon name="moon"></ion-icon>
+          </div>
+        </div>
+        <!--left-->
+
+        <div class="chat-zone">
+          <div class="chat">
+            <h1>Alamos apartment</h1>
+            <div class="contact">
+              <div class="user-avatar user-sm">
+                <img src="./img/png/a0.png" alt="" />
+              </div>
+              <div class="user-avatar user-sm">
+                <img src="./img/png/a14.png" alt="" />
+              </div>
+              <button class="button button__add--contact"></button>
+            </div>
+          </div>
+
+          <div class="chat-text">
+            <div class="chat-box-left">
+              <div class="user-avatar user-sm">
+                <img src="./img/png/a14.png" alt="" />
+              </div>
+              <div class="chat-bubble">
+                <div class="bubble bubble-left">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ipsum aliquam odio fugiat aliquid, quae quo inventore
+                    assumenda quis possimus, ad sint nesciunt culpa accusantium
+                    reiciendis!
+                  </p>
+                </div>
+                <h5>Message seen 1:22pm</h5>
+              </div>
+            </div>
+            <div class="chat-box-right">
+              <div class="user-avatar user-sm">
+                <img src="./img/png/a0.png" alt="" />
+              </div>
+              <div class="chat-bubble">
+                <div class="bubble bubble-right">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+                <h5>Message seen 1:26pm</h5>
+              </div>
+            </div>
+            <div class="chat-box-right">
+              <div class="user-avatar user-sm">
+                <img src="./img/png/a0.png" alt="" />
+              </div>
+              <div class="chat-bubble">
+                <div class="bubble bubble-right">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+                <h5>Message seen 1:28pm</h5>
+              </div>
+            </div>
+            <div class="chat-box-left">
+              <div class="user-avatar user-sm">
+                <img src="./img/png/a14.png" alt="" />
+              </div>
+              <div class="chat-bubble">
+                <div class="bubble bubble-left">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ipsum aliquam odio fugiat aliquid, quae quo inventore
+                    assumenda quis possimus, ad sint nesciunt culpa accusantium
+                    reiciendis!
+                  </p>
+                </div>
+                <h5>Message seen 1:45pm</h5>
+              </div>
+            </div>
+            <div class="chat-box-right">
+              <div class="user-avatar user-sm">
+                <img src="./img/png/a0.png" alt="" />
+              </div>
+              <div class="chat-bubble">
+                <div class="bubble bubble-right">
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <h5>Message sent 1:46pm</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-input">
+            <ion-icon name="videocam-outline"></ion-icon>
+            <ion-icon name="image-outline"></ion-icon>
+            <ion-icon name="add-circle-outline"></ion-icon>
+            <ion-icon name="attach-outline"></ion-icon>
+            <input type="text" placeholder="Type something here..." />
+            <ion-icon name="heart-outline"></ion-icon>
+            <ion-icon name="thumbs-up-outline"></ion-icon>
+          </div>
+        </div>
+
+        <!--right-->
+        <div class="sidebar">
+          <div class="contact">
+            <div class="user-avatar user-large">
+              <img src="./img/png/a0.png" alt="" />
+            </div>
+            <div class="user-avatar user-large">
+              <img src="./img/png/a14.png" alt="" />
+            </div>
+          </div>
+          <div class="contact-info">
+            <h5>Los Alamos apartment</h5>
+            <h2>active now</h2>
+          </div>
+
+          <div class="button-group">
+            <button class="button">
+              <ion-icon name="call"></ion-icon>
+              call group
+            </button>
+            <button class="button">
+              <ion-icon name="videocam"></ion-icon>
+              video chat
+            </button>
+          </div>
+
+          <ul class="list-1">
+            <li>
+              <span>Search in Conversation</span>
+              <ion-icon name="search-outline"></ion-icon>
+            </li>
+            <li>
+              <span>change color</span>
+              <span class="color-sample"></span>
+            </li>
+
+            <li>
+              <span>change emoji</span>
+              <ion-icon name="happy-outline"></ion-icon>
+            </li>
+          </ul>
+
+          <div class="shared-photo">
+            <h2>
+              <ion-icon name="image-outline"></ion-icon>
+              <p>Shared photos</p>
+            </h2>
+            <ul class="list-2">
+              <li>
+                <img
+                  src="https://cdnb.artstation.com/p/assets/images/images/025/823/127/4k/andreas-rocha-outofthewoods01.jpg?1587038067"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="https://cdna.artstation.com/p/assets/images/images/004/189/644/large/ruslan-kim-4.jpg?1481184380"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="https://cdnb.artstation.com/p/assets/images/images/002/057/507/4k/raphael-thiessard-raphael-thiessard-dawn-new-era.jpg?1456665200"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="https://cdna.artstation.com/p/assets/images/images/007/814/908/4k/rutger-van-de-steeg-final.jpg?1508700956"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="https://cdna.artstation.com/p/assets/images/images/010/640/008/large/sylvain-sarrailh-sunsetbridgeartstation.jpg?1525445450"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="https://cdna.artstation.com/p/assets/images/images/032/304/154/large/cycle-circle-the-outer-worlds.jpg?1606062616"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="https://cdna.artstation.com/p/assets/images/images/032/219/940/4k/klaus-pillon-klauspillon-atsunset-4k-copy.jpg?1605801941"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="https://cdna.artstation.com/p/assets/images/images/017/984/106/4k/andreas-rocha-abandoned01.jpg?1558081176"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="https://cdnb.artstation.com/p/assets/images/images/032/314/617/large/-03.jpg?1606091327"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="https://cdna.artstation.com/p/assets/images/images/001/629/550/large/chris-ostrowski-the-alliance-chris-ostrowski-1200w.jpg?1449760408"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="https://cdna.artstation.com/p/assets/images/images/020/655/782/large/sergey-avtushenko-hunters-on-the-way.jpg?1568656485"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="https://cdnb.artstation.com/p/assets/images/images/000/811/233/4k/alexey-shirokikh-landscape06-05.jpg?1433604002"
+                  alt=""
+                />
+              </li>
+            </ul>
+            <center>view more</center>
+          </div>
+          <div class="privacy">
+            <ion-icon name="alert-circle-outline"></ion-icon>
+            privacy &amp; support
+          </div>
+        </div>
+        <!--right-->
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+.chat-zone {
+  padding: 15px 0 var(--padding);
+  display: flex;
+  flex-flow: column nowrap;
+
+  .chat {
+    @include flex(space-between);
+    padding: 0 15px 15px 0;
+
+    h1 {
+      color: var(--text-color-1);
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+
+    .button__add--contact {
+      margin: 0;
+      position: relative;
+      z-index: 1;
+      background-color: var(--btn-background);
+      width: 35px;
+      height: 35px;
+      left: -10px;
+
+      &::before {
+        width: 1px;
+      }
+
+      &::after {
+        height: 1px;
+      }
+
+      &::before,
+      &::after {
+        background-color: var(--btn-color);
+      }
+    }
+  }
+
+  .chat-input {
+    margin-top: auto;
+    border-top: 1px solid var(--line-color);
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ion-icon {
+      --ionicon-stroke-width: 16px;
+      font-size: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    input {
+      width: 450px;
+      padding: 12px 15px;
+      color: var(--text-color-1);
+      border: 0;
+      outline: 0;
+      background-color: var(--bubble-color);
+      border-radius: 5px;
+
+      &::placeholder {
+        font-weight: 700;
+        color: var(--text-color-2);
+      }
+    }
+  }
+
+  .chat-text {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 0 25px 45px 0;
+  }
+}
+
+.chat-box-left {
+  display: flex;
+  margin-bottom: 28px;
+
+  .user-avatar {
+    align-self: flex-end;
+  }
+
+  .chat-bubble {
+    max-width: 550px;
+    margin-left: 10px;
+    .bubble {
+      color: var(--text-color-3);
+      margin-bottom: 10px;
+      background-color: var(--bubble-color);
+      padding: 20px;
+      border-radius: 20px;
+      border-bottom-left-radius: 0;
+
+      p {
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+.chat-box-right {
+  display: flex;
+  margin-bottom: 12px;
+  flex-direction: row-reverse;
+  .user-avatar {
+    align-self: flex-end;
+  }
+
+  .chat-bubble {
+    max-width: 550px;
+    margin-right: 10px;
+
+    h5 {
+      text-align: right;
+    }
+    .bubble {
+      color: #fff;
+      margin-bottom: 10px;
+      background-color: var(--primary-color);
+      padding: 20px;
+      border-radius: 20px;
+      border-bottom-right-radius: 0;
+
+      p {
+        line-height: 1.5;
+      }
+    }
+  }
+}

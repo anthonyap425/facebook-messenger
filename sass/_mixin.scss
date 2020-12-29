@@ -1,0 +1,12 @@
+@mixin flex($justify: flex-start) {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: $justify;
+  align-items: center;
+}
+
+@mixin center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,94 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding) 25px;
+  padding-right: 0;
+  align-items: center;
+  border-left: 1px solid var(--line-color);
+  width: 335px;
+  .contact {
+    @include flex;
+  }
+
+  .contact-info {
+    h5 {
+      font-size: 18px;
+    }
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .button-group {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    display: flex;
+
+    ion-icon {
+      margin-right: 8px;
+      font-size: 16px;
+    }
+  }
+
+  ul.list-1 {
+    width: 100%;
+    margin-bottom: 50px;
+    font-weight: 500;
+    li {
+      width: 100%;
+      @include flex(space-between);
+      padding: 15px 0;
+
+      border-bottom: 1px solid var(--line-color);
+      text-transform: capitalize;
+
+      .color-sample {
+        color: var(--primary-color);
+        background: var(--primary-color);
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 2px solid #6ab7fd;
+      }
+    }
+  }
+
+  .shared-photo {
+    h2 {
+      margin-bottom: 25px;
+      font-weight: 500;
+      p {
+        display: inline-block;
+        margin-left: 5px;
+      }
+    }
+    ul.list-2 {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 55px);
+      grid-gap: 5px;
+      grid-auto-flow: row;
+      margin-bottom: 15px;
+
+      li {
+        border-radius: 5px;
+      }
+    }
+
+    center {
+      color: #2087e3;
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+  }
+
+  .privacy {
+    color: var(--text-color-2);
+    margin-top: auto;
+    align-self: flex-start;
+    ion-icon {
+      vertical-align: middle;
+    }
+  }
+}

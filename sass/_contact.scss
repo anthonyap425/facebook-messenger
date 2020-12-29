@@ -1,0 +1,124 @@
+.contact-bar {
+  padding: var(--padding) 0;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 265px;
+
+  ion-icon {
+    color: var(--toggle);
+    font-size: 20px;
+  }
+}
+.contact {
+  @include flex;
+  padding: 10px 0;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  &-info {
+    margin-left: 12px;
+    h5 {
+      color: var(--text-color-1);
+      margin-bottom: 5px;
+      text-transform: capitalize;
+    }
+
+    h2 {
+      font-size: 12px;
+
+      span {
+        margin-left: 15px;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 4px;
+          height: 4px;
+          background-color: currentColor;
+          border-radius: 50%;
+          top: 50%;
+          transform: translate(0, -50%);
+          left: -8px;
+        }
+      }
+    }
+  }
+
+  &.is-active {
+    position: relative;
+    padding-left: 15px;
+    &::before {
+      content: "";
+      width: 3px;
+      height: 100%;
+      background: var(--primary-color);
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.button__add--contact {
+  background-color: var(--primary-color);
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 18px;
+  align-self: center;
+  margin: 32px 0 12px;
+
+  &::before,
+  &::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+  }
+
+  &::before {
+    width: 2px;
+    height: 30%;
+    @include center;
+  }
+
+  &::after {
+    width: 30%;
+    height: 2px;
+    @include center;
+  }
+}
+
+.mode {
+  cursor: pointer;
+  position: relative;
+  width: max-content;
+
+  span {
+    color: var(--text-color-1);
+    font-weight: 500;
+    background-color: var(--bubble-color);
+    padding: 12px 15px;
+    border-radius: 4px;
+    position: absolute;
+    top: -135%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transform-origin: center;
+    z-index: 1;
+  }
+
+  &:hover span {
+    animation: animate 150ms ease 0s forwards;
+  }
+}
+
+@keyframes animate {
+  100% {
+    top: -180%;
+    opacity: 1;
+  }
+}
